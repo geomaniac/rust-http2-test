@@ -1,0 +1,10 @@
+[package]
+name = "rust-http2-test"
+version = "0.1.0"
+authors = ["Daniel Buse <daniel.buse@giga-infosystems.com>"]
+
+[dependencies]
+
+httpbis = "0.7"
+futures = "0.1.*"
+url = "1"
