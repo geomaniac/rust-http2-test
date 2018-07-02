@@ -30,4 +30,5 @@ fn main() {
         .collect()
         .wait()
         .expect("execute request");
+    ::std::mem::drop(client);
 }

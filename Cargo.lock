@@ -266,7 +266,7 @@ dependencies = [
 [[package]]
 name = "net2"
 version = "0.2.32"
-source = "git+https://github.com/geomaniac/net2-rs?branch=qnd_debug#8770e0440592cbac5560035f29366c033bea25eb"
+source = "git+https://github.com/geomaniac/net2-rs?branch=qnd_debug#46e91859462d4348d72eafd2bff0c23631c9e648"
 dependencies = [
  "cfg-if 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
