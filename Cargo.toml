@@ -9,6 +9,3 @@ httpbis = "0.7"
 futures = "0.1.*"
 url = "1"
 env_logger = "0.5"
-
-[patch.crates-io]
-net2 = { git = "https://github.com/geomaniac/net2-rs", branch = "qnd_debug"}
