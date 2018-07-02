@@ -23,12 +23,18 @@ fn main() {
     let host = url.host_str().expect("URL must have host");
     let port = url.port().unwrap_or(80);
 
-    let client = httpbis::Client::new_plain(host, port, Default::default()).expect("client");
+    loop {
+        let mut line = String::new();
+        ::std::io::stdin()
+            .read_line(&mut line)
+            .expect("correct input");
+        let client = httpbis::Client::new_plain(host, port, Default::default()).expect("client");
 
-    let _resp = client
-        .start_get(url.path(), host)
-        .collect()
-        .wait()
-        .expect("execute request");
-    ::std::mem::drop(client);
+        let _resp = client
+            .start_get(url.path(), host)
+            .collect()
+            .wait()
+            .expect("execute request");
+        ::std::mem::drop(client);
+    }
 }
